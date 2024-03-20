@@ -3,7 +3,7 @@ import MovieCarousel from './MovieCarousel';
 import { Container } from 'react-bootstrap';
 
 const API_KEY = 'cb837173';
-const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=action`;
+const API_URL = `http://www.omdbapi.com/?apikey=${API_KEY}&s=love&type=movie`;
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
