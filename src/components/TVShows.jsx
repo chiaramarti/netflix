@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from './Navbar';
 
 const TVShows = () => {
   return (
     <div>
-      <Navbar />
-      <h1>Netflix</h1>
+      
+      <h2 className='text-center mt-5'>TV SHOWS</h2>
+      
     </div>
   );
 };

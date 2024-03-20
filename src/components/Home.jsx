@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Navbar from './Navbar';
 import MovieCarousel from './MovieCarousel';
 import { Container } from 'react-bootstrap';
 
@@ -27,8 +26,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div style={{ backgroundColor: '#000', minHeight: '100vh', color: '#fff' }}>
-      <Navbar />
+    <div className="bg-dark" style={{ minHeight: '100vh', color: '#fff' }}>
+      
       <Container>
         <MovieCarousel title="Action Movies" movies={movies} />
       </Container>
