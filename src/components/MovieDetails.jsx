@@ -37,7 +37,7 @@ const MovieDetails = () => {
   }
 
   return (
-    <Container className="mt-5">
+    <Container className="my-5">
       <Row>
         <Col md={4}>
           <Card>
