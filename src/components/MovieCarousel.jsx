@@ -8,7 +8,7 @@ const MovieCarousel = ({ title, movies }) => {
       <h2>{title}</h2>
       <Row xs={1} md={2} lg={3} xl={6} className="g-4">
         {movies.map(movie => (
-          <Col key={movie.imdbID}>
+          <Col>
             <Link to={`/movie-details/${movie.imdbID}`} className="text-decoration-none">
               <Card className="h-100">
                 <Card.Img

@@ -1,0 +1,151 @@
+@import '../scss/partials/bootstrap-override.scss';
+
+/*--------------------------------------------------------------------------------
+-------------------------------   HOME   ---------------------------------------*/
+.navbar-brand{
+    img{
+        width: 6em;
+    }
+}
+
+
+header{
+    svg{
+        display: inline-block;
+        color: white;
+        width: 1em;
+        height: 1em;
+    }
+
+    .btn{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+.dropdown-toggle::after{
+    color: rgb(227, 227, 227);
+}
+
+header .dropdown-menu[data-bs-popper]{
+    left: -100px;
+}
+
+main{
+    font-weight: 600;
+    font-size: 1.2rem;
+    nav{
+        li.dropdown{
+            background-color: black;
+            border: 1px white solid;
+            height: 1.2em;
+        }
+        li.dropdown:hover{
+            background-color: rgb(24, 24, 24);
+        }
+
+        section.trending-now-section{
+            .container-fluid{
+                --bs-gutter-x: 0.2em;
+            }
+
+            .row div.col-md-2{
+                max-width: 100%;
+                padding-right: 0;
+                padding-left: 0;
+                margin-top: var(--bs-gutter-y);
+            }
+        }
+        
+    }
+}
+
+footer{ 
+    a{
+        max-width: 200px;
+    }
+}
+.btn-bk{
+    background-color: none;
+    border: 1px white solid;
+    border-radius: 0;
+}
+.btn-bk:hover{
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+}
+
+
+
+/*--------------------------------------------------------------------------------
+-------------------------------  ACCOUNT  ---------------------------------------*/
+.account{
+    h1, form, .second-section{
+        border-bottom: solid 2px rgb(55, 55, 55);
+    }
+
+    .fourth-section{
+        border-top: solid 2px rgb(55, 55, 55);
+    }
+
+    .img-container span{
+        bottom: 1em;
+        left: 1em;
+    }
+
+    span{
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.789);
+    }
+
+    form{
+        input{
+            background-color: rgb(134, 134, 134);
+            display: block;
+            border: none;
+            color: white;
+            padding: 3px 10px;
+            margin-top: 2px;
+            margin-bottom: 1em
+        }
+
+        li .dropdown-toggle{
+            background-color: black;
+            border: 1px white solid;
+            max-width: 5.3em;
+        }
+
+        li .dropdown-toggle:hover{
+            background-color: rgb(24, 24, 24);
+        }
+
+    }
+
+    .badge:nth-child(2){
+        background-color: $gray-800;
+    }
+
+    button{
+        letter-spacing: 2px;
+    }
+
+    .third-section {
+
+        p{
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .btn{
+            --bs-btn-padding-x: 0.1em;
+            --bs-btn-padding-y: 0;
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------------
+-------------------------------   SETTING  ---------------------------------------*/
+.brd-btm{
+    border-bottom: solid 2px rgba(107, 107, 107, 0.285);
+}
